@@ -1,21 +1,92 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Lingua - English Learning</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
-    <h1>Salom</h1>
+<header>
+    <div class="logo">🦉 Lingua</div>
+    <nav>
+        <a href="#">Bosh sahifa</a>
+        <a href="#lessons">Darslar</a>
+        <a href="#about">Biz haqimizda</a>
+    </nav>
+    <div class="stats">
+        ⭐ <span id="xp">0</span> XP
+        🔥 <span id="streak">1</span>
+    </div>
+</header>
 
-    <button>click</button>
+<main>
+    <section class="hero">
+        <h1>Ingliz tilini oson o‘rgan! 🚀</h1>
+        <p>Har kuni mashq qil, yangi so‘zlarni o‘rgan va ball yig‘!</p>
+        <a href="#lessons" class="start">Darsni boshlash</a>
+    </section>
 
-    <h2>h2 salom</h2>
-  
-    <h2>cs2</h2>
-    <button>cs2 skinlar</button>
+    <section id="lessons" class="lessons">
+        <h2>📚 Ingliz tili darslari</h2>
+
+        <div class="lesson">
+            <div class="number">01</div>
+            <div>
+                <h3>Salomlashish</h3>
+                <p>Hello, Hi, Good morning</p>
+            </div>
+            <button onclick="startLesson(0)">Boshlash</button>
+        </div>
+
+        <div class="lesson">
+            <div class="number">02</div>
+            <div>
+                <h3>Olmoshlar</h3>
+                <p>I, You, He, She, We, They</p>
+            </div>
+            <button onclick="startLesson(1)">Boshlash</button>
+        </div>
+
+        <div class="lesson">
+            <div class="number">03</div>
+            <div>
+                <h3>Am / Is / Are</h3>
+                <p>Ingliz tili grammatikasi</p>
+            </div>
+            <button onclick="startLesson(2)">Boshlash</button>
+        </div>
+
+        <div class="lesson">
+            <div class="number">04</div>
+            <div>
+                <h3>Hayvonlar</h3>
+                <p>Dog, Cat, Lion, Bird</p>
+            </div>
+            <button onclick="startLesson(3)">Boshlash</button>
+        </div>
+    </section>
+
+    <section class="quiz" id="quiz">
+        <h2>🎯 Ingliz tili testi</h2>
+        <div id="question">Darsni boshlash uchun yuqoridagi tugmani bosing.</div>
+        <div id="answers"></div>
+        <p id="result"></p>
+        <button id="next" onclick="nextQuestion()" hidden>Keyingi savol</button>
+    </section>
+
+    <section id="about" class="about">
+        <h2>🌟 Bizning maqsadimiz</h2>
+        <p>Har kuni yangi bilim, yangi so‘z va yangi imkoniyat!</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Lingua English Learning</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

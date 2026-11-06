@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5fff7;
+    color: #263b32;
+}
+
+header {
+    background: white;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 12px #ddd;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #43a047;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.stats {
+    color: #e59a00;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #b9f6ca, #e8f5e9);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.start {
+    display: inline-block;
+    background: #43a047;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lessons, .quiz, .about {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #299447;
+}
+
+.lesson {
+    background: white;
+    border: 2px solid #dcefe0;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 3px 8px #eee;
+}
+
+.lesson h3 {
+    margin-bottom: 7px;
+}
+
+.number {
+    background: #43a047;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.lesson button, #next {
+    margin-left: auto;
+    background: #43a047;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.quiz {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+#question {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.answer {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 16px;
+    margin: 10px 0;
+    background: #f4f8f5;
+    border: 2px solid #dcefe0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.answer:hover {
+    background: #d9f7df;
+}
+
+#result {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.about {
+    text-align: center;
+}
+
+footer {
+    background: #263b32;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .lesson {
+        flex-wrap: wrap;
+    }
+}
